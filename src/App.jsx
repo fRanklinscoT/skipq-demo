@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
+import AdminDashboard from './components/Admin';
+import ErrorPage from './components/error404';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admin" element={<AdminDashboard  />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
     </div>
