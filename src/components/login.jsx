@@ -42,9 +42,8 @@ export default function Login() {
             onChange={(e) => setRole(e.target.value)}
             className="w-full px-4 py-2 border border-yellow-600 rounded-full text-sm dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           >
-            <option>Student</option>
-            <option>TUT Admin</option>
-            <option>Saso Admin</option>
+            <option value="Student">Student</option>
+            <option value="Admin">TUT Admin</option>
           </select>
         </div>
 
