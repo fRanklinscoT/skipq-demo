@@ -7,7 +7,6 @@ export default function ManageRegistration() {
         <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
           Manage Registration
         </h1>
-
       </div>
     </div>
   );
