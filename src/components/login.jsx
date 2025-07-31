@@ -19,7 +19,7 @@ export default function Login() {
     e.preventDefault();
 
     if (!isValidUser()) {
-      alert("Don't make us send you the password again");
+      alert("Please visit the tut4life.tut.ac.za or press forgot password");
       return;
     }
 
@@ -65,7 +65,7 @@ export default function Login() {
           <div className="mb-4">
             <input
               type="text"
-              placeholder="Student Number"
+              placeholder={role == "Student" ? "Student number" : "Staff number"}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-yellow-500"

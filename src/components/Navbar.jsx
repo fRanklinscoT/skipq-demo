@@ -2,7 +2,7 @@ import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="w-full sm:w-4/5 md:w-3/4 lg:w-1/2 mx-auto bg-stone-300 shadow-md px-4 sm:px-6 py-4 flex justify-between items-center rounded-none sm:rounded-xl sticky shadow-black dark:bg-gray-700 dark:border-gray-600">
+    <nav className="w-full sm:w-4/5 md:w-3/4 lg:w-1/2 mx-auto bg-stone-200 shadow-md px-4 sm:px-6 py-4 flex justify-between items-center rounded-none sm:rounded-xl sticky shadow-black dark:bg-gray-700 dark:border-gray-600">
       <div className="text-lg sm:text-xl font-bold text-yellow-600 dark:text-yellow-600">
         SkipQ
       </div>

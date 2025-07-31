@@ -54,10 +54,10 @@ export default function Dashboard() {
                 data-aos-delay="300"
                 data-aos-duration="600"
             >
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300 mb-4">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
               Welcome to <span className="text-yellow-600">SkipQ</span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6">
+            <p className="text-sm sm:text-base md:text-lg text-white mb-6">
               Your one-stop solution for managing your registration problems. Check the dashboard to see how we can make your day better today.
             </p>
             <button className="px-5 py-2 text-sm sm:text-base bg-yellow-600 text-white rounded-full hover:bg-yellow-700 transition duration-300">
