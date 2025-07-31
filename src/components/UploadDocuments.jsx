@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
+import EnquireBtn from "./Enquire";
 
 export default function UploadDocuments() {
+  
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -18,7 +21,13 @@ export default function UploadDocuments() {
      
       
       <Navbar />
-      <h1 className="text-xl font-bold text-gray-800 dark:text-white mb-2 flex justify-center text-start mt-10">Upload Documents</h1>
+      <div className="bg-white py-10 px-4 mt-4">
+      <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
+        <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
+          upload Documentation
+        </h1>
+      </div>
+    </div>
       {/* Table Section */}
       <div className="w-full px-4 flex justify-center mt-20">
         <div className="overflow-x-auto rounded-lg shadow-md w-full max-w-5xl">
@@ -103,6 +112,7 @@ export default function UploadDocuments() {
           >
             Upload
           </button>
+          <EnquireBtn />
         </div>
       </div>
     </>

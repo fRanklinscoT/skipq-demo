@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import img from '../assets/tut.png';
 import AOS from 'aos';
 import DashboardCard from './DashboardCards';
+import EnquireBtn from './Enquire';
 
 export default function Dashboard() {
 
@@ -31,7 +32,7 @@ export default function Dashboard() {
         {
             title: 'Contact Support',
             description: 'Get in touch with our support team for any assistance.',
-            href: '/support'
+            href: '/contact'
         }
     ];
 
@@ -48,13 +49,13 @@ export default function Dashboard() {
         <Navbar />
         <div className="flex items-center justify-start px-4 sm:px-8 min-h-[650px]">
          <div
-                className="w-full sm:w-3/4 md:w-1/2 bg-transparent p-4 sm:p-8 rounded-lg shadow-lg"
+                className="w-full sm:w-3/4 md:w-1/2 bg-black/30 p-4 sm:p-8 rounded-lg shadow-lg"
                 data-aos="fade-up"
                 data-aos-offset="400"
                 data-aos-delay="300"
                 data-aos-duration="600"
             >
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white  mb-4">
               Welcome to <span className="text-yellow-600">SkipQ</span>
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-white mb-6">
@@ -79,6 +80,7 @@ export default function Dashboard() {
         <div className="text-center mt-8">
           <p className="text-gray-500 dark:text-gray-400">© 2023 SkipQ. All rights reserved.</p> 
         </div>
+        <EnquireBtn />
     </div>
   );
 }
