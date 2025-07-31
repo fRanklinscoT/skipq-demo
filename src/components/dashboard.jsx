@@ -5,6 +5,7 @@ import AOS from 'aos';
 import DashboardCard from './DashboardCards';
 import EnquireBtn from './Enquire';
 import { useNavigate } from 'react-router-dom';
+import ParallaxCard from './modular/parallaxCard';
 
 export default function Dashboard() {
 
@@ -86,6 +87,7 @@ export default function Dashboard() {
           <p className="text-gray-500 dark:text-gray-400 py-16 border-t-1 border-white/50 my-8">© 2023 SkipQ. All rights reserved.</p> 
         </div>
         <EnquireBtn />
+        
     </div>
   );
 }

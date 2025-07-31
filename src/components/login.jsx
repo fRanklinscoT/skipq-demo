@@ -33,7 +33,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-200 dark:bg-gray-800 dark:text-white">
+    <div className="flex items-center justify-center min-h-screen dark:bg-gray-800 bg-gradient-to-tr from-blue-700 via-blue-600 to-blue-500 dark:text-white m-0">
       <div className="w-[380px] bg-stone-300 rounded-xl p-8 border-white shadow-lg shadow-black dark:bg-gray-700 dark:border-gray-600">
         {/* Logo and title */}
         <div className="flex flex-col items-center mb-8">

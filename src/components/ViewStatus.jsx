@@ -28,14 +28,14 @@ export default function ViewStatus() {
             className="rounded-xl min-h-screen"
           >
       <Navbar />
+      
       <div className="bg-white/5 py-10 px-4 mt-4">
         <div className="max-w-3xl mx-auto bg-white/60 shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
             Status Check
           </h1>
         </div>
-      </div>
-
+      </div>      
       <div className="min-h-screen px-4 py-6 bg-white/5">
         <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 my-28">
           <h1 className="text-2xl font-bold mb-4 text-gray-800">
