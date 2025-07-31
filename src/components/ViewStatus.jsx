@@ -4,6 +4,7 @@ import EnquireBtn from "./Enquire";
 import StatusCard from "./modular/StatusCard";
 import ProgressBar from "./modular/ProgressBar";
 import EnquiryStatus from "./modular/EnquireyStatus";
+import img from "../assets/tut.jpg"
 
 
 export default function ViewStatus() {
@@ -18,17 +19,24 @@ export default function ViewStatus() {
   };
 
   return (
-    <>
+    <div
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+            className="rounded-xl min-h-screen"
+          >
       <Navbar />
-      <div className="bg-white py-10 px-4 mt-4">
-        <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
+      <div className="bg-white/5 py-10 px-4 mt-4">
+        <div className="max-w-3xl mx-auto bg-white/60 shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
             Status Check
           </h1>
         </div>
       </div>
 
-      <div className="min-h-screen px-4 py-6 bg-white">
+      <div className="min-h-screen px-4 py-6 bg-white/5">
         <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 my-28">
           <h1 className="text-2xl font-bold mb-4 text-gray-800">
             Registration Status
@@ -51,10 +59,10 @@ export default function ViewStatus() {
           </div>
 
           <EnquiryStatus enquiry={studentData.enquiry} />
-
+           
           <EnquireBtn />
         </div>
       </div>
-    </>
+      </div>
   );
 }

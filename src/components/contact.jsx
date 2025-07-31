@@ -1,11 +1,19 @@
 import Navbar from "./Navbar";
+import img from "../assets/tut.png";
 
 const Enquire = () => {
   return (
 
-    <>
+    <div
+                style={{
+                  backgroundImage: `url(${img})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+                className="rounded-xl min-h-screen bg-black/80"
+              >
     <Navbar />
-    <div className="p-6 max-w-xl mx-auto mt-28">
+    <div className="p-6 max-w-xl mx-auto mt-28 bg-white/80">
       <h1 className="text-2xl font-bold text-gray-800 mb-2">
         Need Help with Registration?
       </h1>
@@ -38,7 +46,7 @@ const Enquire = () => {
         Submit Enquiry
       </button>
     </div>
-    </>
+    </div>
   );
 };
 

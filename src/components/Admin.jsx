@@ -25,7 +25,7 @@ export default function AdminDashboard() {
               <Link to="/admin" className="hover:text-yellow-500">Dashboard</Link>
               <Link to="/admin/enquiries" className="hover:text-yellow-500">Student Enquiries</Link>
               <Link to="/admin/analytics" className="hover:text-yellow-500">Analytics</Link>
-              <Link to="/admin/settings" className="hover:text-yellow-500">Settings</Link>
+              <Link to="/admin/settings" className="hover:text-yellow-500">Student Records</Link>
             </nav>
           </>
         )}

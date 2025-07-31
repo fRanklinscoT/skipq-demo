@@ -4,8 +4,13 @@ import img from '../assets/tut.png';
 import AOS from 'aos';
 import DashboardCard from './DashboardCards';
 import EnquireBtn from './Enquire';
+import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
+
+    const scrollToDashboard = () => {
+      document.getElementById("dashboard")?.scrollIntoView({ behavior: "smooth" });
+    };
 
     //AOS
     useEffect(() => {
@@ -61,13 +66,13 @@ export default function Dashboard() {
             <p className="text-sm sm:text-base md:text-lg text-white mb-6">
               Your one-stop solution for managing your registration problems. Check the dashboard to see how we can make your day better today.
             </p>
-            <button className="px-5 py-2 text-sm sm:text-base bg-yellow-600 text-white rounded-full hover:bg-yellow-700 transition duration-300">
+            <button className="px-5 py-2 text-sm sm:text-base bg-yellow-600 text-white rounded-full hover:bg-yellow-700 transition duration-300" onClick={scrollToDashboard}>
               Explore Dashboard
             </button>
           </div>
         </div>
       </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8" id="dashboard">
         {dashboardContent.map((item, index) => (
             <DashboardCard
             key={index}
@@ -78,7 +83,7 @@ export default function Dashboard() {
         ))}
         </div>
         <div className="text-center mt-8">
-          <p className="text-gray-500 dark:text-gray-400">© 2023 SkipQ. All rights reserved.</p> 
+          <p className="text-gray-500 dark:text-gray-400 py-16 border-t-1 border-white/50 my-8">© 2023 SkipQ. All rights reserved.</p> 
         </div>
         <EnquireBtn />
     </div>

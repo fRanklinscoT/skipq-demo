@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
 import EnquireBtn from "./Enquire";
+import img from "../assets/tut.jpg"
 
 export default function UploadDocuments() {
   
@@ -17,19 +18,26 @@ export default function UploadDocuments() {
   };
 
   return (
-    <>
+
      
-      
+      <div
+                  style={{
+                    backgroundImage: `url(${img})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                  className="rounded-xl min-h-screen"
+                >
       <Navbar />
-      <div className="bg-white py-10 px-4 mt-4">
-      <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
-          upload Documentation
-        </h1>
-      </div>
-    </div>
+        <div className="bg-white/10 py-10 px-4 mt-4">
+            <div className="max-w-3xl mx-auto bg-white/60 shadow-md rounded-lg p-6">
+                <h1 className="text-2xl font-bold text-yellow-700 mb-6 text-center">
+                upload Documentation
+                </h1>
+            </div>
+        </div>
       {/* Table Section */}
-      <div className="w-full px-4 flex justify-center mt-20">
+      <div className="w-full px-4 flex justify-center mt-20 bg-white/10">
         <div className="overflow-x-auto rounded-lg shadow-md w-full max-w-5xl">
           <table className="w-full border-collapse text-sm text-left">
             <thead className="bg-yellow-600 text-white">
@@ -86,8 +94,8 @@ export default function UploadDocuments() {
       </div>
 
       {/* Upload Section */}
-      <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-10 mt-[-100px]">
-        <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md">
+      <div className="min-h-screen bg-white/10 flex flex-col items-center justify-center px-4 py-10 mt-[-100px]">
+        <div className="bg-white/60 shadow-lg rounded-xl p-6 w-full max-w-md">
           <h2 className="text-2xl font-semibold text-center mb-6">Upload Document</h2>
 
           <input
@@ -115,6 +123,6 @@ export default function UploadDocuments() {
           <EnquireBtn />
         </div>
       </div>
-    </>
+    </div>
   );
 }
